@@ -39,7 +39,7 @@
    &kp CAPS   &kp LC(LALT)   &kp LCTRL   &kp LALT   &kp LGUI  &kp SPACE  &kp C_PP    &mo 1   &mo 2   &kp GRAVE   &kp RET   &kp BSLH   &kp DEL   
                         >;
 
-			sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp VOL_UP VOL_DN>;
                 };
 
         lower_layer {
