@@ -33,13 +33,13 @@
 // | CTRL  |  ALT  |  GUI  |  SHFT  | DEL | BSPC |    | CAPS |    | SPC |optional|   GUI  |  ALT  |  CTRL |   ;   |
 //                         					  
 		bindings = <
-   &kp ESC       &kp Q        &kp W     &kp E       &kp R    &kp T                &kp Y     &kp U     &kp I       &kp O       &kp P      &none
-   &mo 1         &kp A        &kp S     &kp D       &kp F    &kp G      &none     &kp H     &kp J     &kp K       &kp L       &kp SEMI   &kp SQT
-   &kp LSHFT     &kp Z        &kp X     &kp C       &kp V    &kp B      &mo 2     &kp N     &kp M     &kp COMMA   &kp DOT     &kp FSLH   &kp MINUS  
-   &hm LGUI BSPC &hm LALT DEL &none     &kp LCTRL   &kp TAB  &kp PG_DN  &none     &kp ENTER &kp SPACE &mo 1       &none       &kp BSPC   &kp DEL   
+   &kp TAB    &kp Q          &kp W       &kp E      &kp R     &kp T                  &kp Y   &kp U   &kp I       &kp O     &kp P      &kp BSPC
+   &kp ESC    &kp A          &kp S       &kp D      &kp F     &kp G      &kp PG_UP   &kp H   &kp J   &kp K       &kp L     &kp SEMI   &kp SQT
+   &kp LSHFT  &kp Z          &kp X       &kp C      &kp V     &kp B      &kp PG_DN   &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH   &kp RSHFT  
+   &kp CAPS   &kp LC(LALT)   &kp LCTRL   &kp LALT   &kp LGUI  &kp SPACE  &kp C_PP    &mo 1   &mo 2   &kp GRAVE   &kp RET   &kp BSLH   &kp DEL   
                         >;
 
-			sensor-bindings = <&inc_dec_kp DEL BSPC>;
+			sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
                 };
 
         lower_layer {
